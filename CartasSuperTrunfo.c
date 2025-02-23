@@ -3,7 +3,9 @@
 
 int main() {
 
-    // Definindo tipos de dados e variáveis para a carta 1
+    printf("Cadastro de cartas - Super Trunfo!")
+
+    // Definindo tipos de dados e variáveis para a carta n.º 1
     char estado1;
     char codigo_da_carta1[4];
     char nome_da_cidade1[50];
@@ -12,7 +14,7 @@ int main() {
     float PIB1;
     int numero_de_pontos_turisticos1;
 
-    // Coletando dados para a carta 1
+    // Coletando dados para a carta n.º 1
     printf("Insira os dados da primeira carta abaixo: \n");
     
     printf("Digite uma letra de 'A' a 'H', representando um dos oito estados: \n");
@@ -44,7 +46,7 @@ int main() {
     getchar(); // Limpa o buffer de entrada
 
 
-    // Definindo tipos de dados e variáveis para a carta 2
+    // Definindo tipos de dados e variáveis para a carta n.º 2
     char estado2;
     char codigo_da_carta2[4];
     char nome_da_cidade2[50];
@@ -55,7 +57,7 @@ int main() {
 
     printf("\n"); // Adicionando uma linha em branco para melhorar a visualização do usuário
 
-    // Coletando dados para a carta 2
+    // Coletando dados para a carta n.º 2
     printf("Insira os dados da segunda carta abaixo: \n");
     
     printf("Digite uma letra de 'A' a 'H', representando um dos oito estados: \n");
@@ -91,7 +93,7 @@ int main() {
 
     // Exibição de resultados
 
-    printf("Carta 1:\n");
+    printf("Carta n.º 1:\n");
     printf("\n");
     printf("Estado: %c\n", estado1);
     printf("Código da carta: %s\n", codigo_da_carta1);
@@ -103,7 +105,7 @@ int main() {
 
     printf("\n");
 
-    printf("Carta 2:\n");
+    printf("Carta n.º 2:\n");
     printf("\n");
     printf("Estado: %c\n", estado2);
     printf("Código da carta: %s\n", codigo_da_carta2);
