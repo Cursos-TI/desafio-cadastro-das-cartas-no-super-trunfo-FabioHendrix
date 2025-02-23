@@ -3,7 +3,7 @@
 
 int main() {
 
-    printf("Cadastro de cartas - Super Trunfo!")
+    printf("Cadastro de cartas - Super Trunfo!");
 
     // Definindo tipos de dados e variáveis para a carta n.º 1
     char estado1;
