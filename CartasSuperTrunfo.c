@@ -3,7 +3,7 @@
 
 int main() {
 
-    printf("Cadastro de cartas - Super Trunfo!");
+    printf("Cadastro de cartas - Super Trunfo! \n");
 
     // Definindo tipos de dados e variáveis para a carta n.º 1
     char estado1;
@@ -13,6 +13,8 @@ int main() {
     float area1;
     float PIB1;
     int numero_de_pontos_turisticos1;
+    float PIB_per_capita1;
+    float densidade_populacional1;
 
     // Coletando dados para a carta n.º 1
     printf("Insira os dados da primeira carta abaixo: \n");
@@ -54,6 +56,8 @@ int main() {
     float area2;
     float PIB2;
     int numero_de_pontos_turisticos2;
+    float PIB_per_capita2;
+    float densidade_populacional2;
 
     printf("\n"); // Adicionando uma linha em branco para melhorar a visualização do usuário
 
@@ -91,7 +95,14 @@ int main() {
     printf("\n"); // Linha em branco para separar a coleta de dados da visualização de dados
     
 
-    // Exibição de resultados
+    // Calculo de PIB per capita e densidade populacional
+
+    densidade_populacional1 = populacao1 / area1;
+    PIB_per_capita1 = PIB1 / populacao1;
+
+    densidade_populacional2 = populacao2 / area2;
+    PIB_per_capita2 = PIB2 / populacao2;
+// Exibição de resultados
 
     printf("Carta n.º 1:\n");
     printf("\n");
@@ -102,6 +113,8 @@ int main() {
     printf("Área: %.2f km²\n", area1);
     printf("PIB: R$ %.2f bilhões\n", PIB1);
     printf("Pontos turísticos: %d\n", numero_de_pontos_turisticos1);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade_populacional1);
+    printf("PIB per capita: R$ %.2f\n", PIB_per_capita1);
 
     printf("\n");
 
@@ -114,6 +127,8 @@ int main() {
     printf("Área: %.2f km²\n", area2);
     printf("PIB: R$ %.2f bilhões\n", PIB2);
     printf("Pontos turísticos: %d\n", numero_de_pontos_turisticos2);
+    printf("Densidade Populacional: %.2f hab/km²\n", densidade_populacional2);
+    printf("PIB per capita: R$ %.2f\n", PIB_per_capita2);
 
 
     return 0;
