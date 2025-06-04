@@ -35,11 +35,11 @@ int main() {
     scanf("%d", &populacao1);
     getchar(); // Limpa o buffer de entrada
 
-    printf("Digite a área da cidade em km² (máximo de duas casas decimais após a vírgula. ex: 123.45): \n");
+    printf("Digite a área da cidade em km² (máximo de duas casas decimais após o ponto. ex: 123.45): \n");
     scanf("%f", &area1);
     getchar(); // Limpa o buffer de entrada
 
-    printf("Digite o Produto Interno Bruto (PIB) em bilhões de R$ (máximo de duas casas decimais após a vírgula. ex: 123.45): \n");
+    printf("Digite o Produto Interno Bruto (PIB) em escala de bilhões de R$ (máximo de duas casas decimais após o ponto. ex: 1.45): \n");
     scanf("%f", &PIB1);
     getchar(); // Limpa o buffer de entrada
 
@@ -80,11 +80,11 @@ int main() {
     scanf("%d", &populacao2);
     getchar(); // Limpa o buffer de entrada
 
-    printf("Digite a área da cidade em km² (máximo de duas casas decimais após a vírgula. ex: 123.45): \n");
+    printf("Digite a área da cidade em km² (máximo de duas casas decimais após o ponto. ex: 123.45): \n");
     scanf("%f", &area2);
     getchar(); // Limpa o buffer de entrada
 
-    printf("Digite o Produto Interno Bruto (PIB) em bilhões de R$ (máximo de duas casas decimais após a vírgula. ex: 123.45): \n");
+    printf("Digite o Produto Interno Bruto (PIB) em escala de bilhões de R$ (máximo de duas casas decimais após o ponto. ex: 1.45): \n");
     scanf("%f", &PIB2);
     getchar(); // Limpa o buffer de entrada
 
@@ -98,11 +98,12 @@ int main() {
     // Calculo de PIB per capita e densidade populacional
 
     densidade_populacional1 = populacao1 / area1;
-    PIB_per_capita1 = PIB1 / populacao1;
+    PIB_per_capita1 = (PIB1 * 1e9) / populacao1;
 
     densidade_populacional2 = populacao2 / area2;
-    PIB_per_capita2 = PIB2 / populacao2;
-// Exibição de resultados
+    PIB_per_capita2 = (PIB2 * 1e9) / populacao2;
+
+    // Exibição de resultados
 
     printf("Carta n.º 1:\n");
     printf("\n");
